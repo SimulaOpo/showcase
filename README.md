@@ -1,6 +1,6 @@
 # SimulaOpo — Showcase técnico
 
-Extracto público de decisiones técnicas del código de [SimulaOpo.com](https://simulaopo.com), plataforma SaaS de simulacros para oposiciones en producción desde 2024.
+Extracto público de decisiones técnicas del código de [SimulaOpo.com](https://simulaopo.com), plataforma SaaS de simulacros para oposiciones en producción desde 2025.
 
 Este repositorio **no es el proyecto completo**: es una selección curada de módulos representativos, sanitizada para uso público. El código completo vive en un repositorio privado (`SimulaOpo/core`) — acceso bajo petición para procesos de selección.
 
