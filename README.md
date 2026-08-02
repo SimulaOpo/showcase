@@ -36,13 +36,21 @@ Módulo autocontenido que restaura la IP real del visitante desde `CF-Connecting
 
 Ejemplo de migración de esquema con disciplina: versionado, cambios documentados en el propio SQL, índices donde toca, `ENUM` para valores cerrados.
 
+### [05 · Cliente en tiempo real del trivial multijugador](./05-trivia-realtime-client/)
+
+SPA en JavaScript vanilla que conecta con un servidor Node.js/Socket.IO. Muestra la config real de transports (por qué `polling` antes de `websocket` en Hostinger), recuperación de partida tras reconexión con grace period, y disconnect handler inteligente que evita falsos errores.
+
+### [06 · Banner de trial — full-stack en un fichero](./06-trial-banner-ux/)
+
+Componente PHP + HTML + CSS + JS en un solo archivo. Backend con 4 gates de decisión (incluyendo exclusión mutua con banner de afiliados), HTML semántico accesible, CSS responsive con `flex-wrap` y media query, y countdown cliente-side eficiente (tick por minuto, no por segundo).
+
 ## Qué no aparece aquí (pero existe en el core)
 
 - Sistema completo de trial premium de 7 días con cupón post-trial
 - Registro y autenticación OAuth Google
 - Dashboard de administración con panel de afiliados
 - Motor de tests, banco de preguntas, sistema de retención
-- Servidor Node.js con Socket.IO para el trivial multijugador 1v1 (`SimulaOpo/trivia-server`, también privado)
+- Código del **servidor** Node.js del trivial (aquí solo aparece el cliente); vive en `SimulaOpo/trivia-server`, también privado
 - Suite de scripts CLI ejecutados por cron (emails, recordatorios, reportes)
 - Rate limiting propio + medidas anti-brute-force en `/login`
 
