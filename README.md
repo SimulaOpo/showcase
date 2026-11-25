@@ -10,7 +10,7 @@ SimulaOpo es una plataforma web de simulacros para preparación de oposiciones. 
 
 ## Estado actual (noviembre de 2026)
 
-SimulaOpo empezó con un modelo de suscripción (plan premium, trial de 7 días, cupones y programa de afiliados). Ese sistema se desarrolló completo y estuvo desplegado en producción, y es el que documentan las piezas 01, 02, 04 y 06. Después el modelo cambió: hoy el acceso a los simulacros es gratuito y la plataforma vende temarios, así que las suscripciones ya no están visibles en la web. El código se mantiene aquí porque las decisiones técnicas siguen siendo válidas.
+SimulaOpo empezó con un modelo de suscripción (plan premium, trial de 7 días, cupones y programa de afiliados). El sistema de suscripciones se desarrolló completo y estuvo desplegado en producción; es el que documentan las piezas 01 y 06. Después el modelo cambió: hoy el acceso a los simulacros es gratuito y la plataforma vende temarios, así que las suscripciones ya no están visibles en la web. El programa de afiliados (piezas 02 y 04) y el trivial multijugador (pieza 05) siguen activos. El código se mantiene aquí porque las decisiones técnicas siguen siendo válidas.
 
 ## Stack
 

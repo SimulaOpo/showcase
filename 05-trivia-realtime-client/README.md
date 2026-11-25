@@ -26,7 +26,7 @@ SPA del trivial multijugador 1v1 de SimulaOpo. JavaScript vanilla puro (sin fram
 
 Servidor Node.js en `trivia.simulaopo.com` (subdominio con app Node en Hostinger Business, auto-deploy desde GitHub). El servidor implementa emparejamiento por criterios (temario compartido), gestión de salas privadas con código, sincronización de rondas con temporizador, sistema de ELO y grace period de 30 segundos para reconexiones.
 
-Durante la etapa de suscripciones era una función exclusiva para usuarios premium: a los no-premium se les mostraba una página gate (de ahí la comprobación al inicio del extracto).
+El trivial sigue activo. La comprobación de la página gate al inicio del extracto viene de la etapa de suscripciones, cuando era una función exclusiva para usuarios premium.
 
 ## Referencias
 

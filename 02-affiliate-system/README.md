@@ -18,4 +18,4 @@ Motor de atribución para el programa de afiliados de SimulaOpo. Captura clicks 
 
 ## Contexto
 
-El programa de afiliados se diseñó para la etapa de suscripciones de SimulaOpo (ver "Estado actual" en el [README principal](../README.md)) y funciona con cookie de 30 días. Cuando el visitante atribuido se registra, `atribuirUsuarioRecienCreado()` (omitido del extracto) enlaza el `usuario_id` al `afiliado_id`. Cuando ese usuario paga, `registrarVentaParaUsuario()` calcula y registra la comisión — sistema completo desde click hasta cobro.
+El programa de afiliados de SimulaOpo sigue activo y funciona con cookie de 30 días. Cuando el visitante atribuido se registra, `atribuirUsuarioRecienCreado()` (omitido del extracto) enlaza el `usuario_id` al `afiliado_id`. Cuando ese usuario paga, `registrarVentaParaUsuario()` calcula y registra la comisión — sistema completo desde click hasta cobro.
