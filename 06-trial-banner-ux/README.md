@@ -41,6 +41,6 @@ El comentario del código explica también **por qué** se consulta a BBDD y no 
 - **Un solo archivo, un solo `include`, sin build step**. Encaja con el enfoque general de SimulaOpo: vanilla + PHP directo, sin bundler, sin framework de componentes. Fricción cero para tocar el banner en 5 minutos.
 - **Manejo defensivo del fallo de BBDD**: el `try/catch` en la query de `afiliado_id` — si la BBDD casca, se loggea y se sigue mostrando el banner (comportamiento por defecto seguro), en lugar de ocultarlo o romper la página.
 
-## Contexto en producción
+## Contexto
 
-En producción coexisten dos banners: **banner_trial** (amarillo, este) y **banner_afiliado_descuento** (verde). Nunca aparecen los dos a la vez — la exclusión mutua está garantizada por la cuarta gate. Documentado en la memoria del proyecto como "trampa crítica del trial" para evitar regresiones futuras.
+Componente de la etapa de suscripciones de SimulaOpo, actualmente desactivado (ver "Estado actual" en el [README principal](../README.md)). En producción coexistían dos banners: **banner_trial** (amarillo, este) y **banner_afiliado_descuento** (verde). Nunca aparecían los dos a la vez — la exclusión mutua está garantizada por la cuarta gate. Documentado en la memoria del proyecto como "trampa crítica del trial" para evitar regresiones futuras.

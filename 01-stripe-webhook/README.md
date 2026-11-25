@@ -14,9 +14,9 @@ Integración completa con Stripe para gestionar el ciclo de vida de suscripcione
 - **Orden no garantizado**: se documenta explícitamente que los eventos no llegan en orden y por qué `checkout.session.completed` puede llegar después de `customer.subscription.created`.
 - **Contract con Stripe**: solo se responde 200 cuando el handler completa sin excepción. Un 5xx hace que Stripe reintente, un 2xx marca el evento como procesado. La distinción importa.
 
-## Contexto en producción
+## Contexto
 
-Este endpoint procesa pagos reales en `https://simulaopo.com/webhook_stripe.php` (Stripe live). Los cinco eventos gestionados cubren el ciclo completo de una suscripción: alta, renovación, cambios de plan, cancelaciones y fallos de cobro.
+Este endpoint estuvo desplegado en producción contra Stripe en modo live durante la etapa de suscripciones de SimulaOpo. Hoy las suscripciones están desactivadas (ver "Estado actual" en el [README principal](../README.md)). Los cinco eventos gestionados cubren el ciclo completo de una suscripción: alta, renovación, cambios de plan, cancelaciones y fallos de cobro.
 
 ## Referencias
 

@@ -1,6 +1,6 @@
 # SimulaOpo — Showcase técnico
 
-Extracto público de decisiones técnicas del código de [SimulaOpo.com](https://simulaopo.com), plataforma SaaS de simulacros para oposiciones en producción desde 2025.
+Extracto público de decisiones técnicas del código de [SimulaOpo.com](https://simulaopo.com), plataforma web de simulacros para oposiciones en producción desde 2025.
 
 Este repositorio **no es el proyecto completo**: es una selección curada de módulos representativos, sanitizada para uso público. El código completo vive en un repositorio privado (`SimulaOpo/core`) — acceso bajo petición para procesos de selección.
 
@@ -8,12 +8,16 @@ Este repositorio **no es el proyecto completo**: es una selección curada de mó
 
 SimulaOpo es una plataforma web de simulacros para preparación de oposiciones. La he diseñado, desarrollado, desplegado y mantengo íntegramente yo. Todo el trabajo aquí mostrado, desde la arquitectura hasta el diagnóstico de incidencias en producción, es individual.
 
+## Estado actual (noviembre de 2026)
+
+SimulaOpo empezó con un modelo de suscripción (plan premium, trial de 7 días, cupones y programa de afiliados). Ese sistema se desarrolló completo y estuvo desplegado en producción, y es el que documentan las piezas 01, 02, 04 y 06. Después el modelo cambió: hoy el acceso a los simulacros es gratuito y la plataforma vende temarios, así que las suscripciones ya no están visibles en la web. El código se mantiene aquí porque las decisiones técnicas siguen siendo válidas.
+
 ## Stack
 
 - **Backend**: PHP 8 sobre arquitectura MVC · MySQL · Composer
 - **Frontend**: HTML5, CSS3, JavaScript vanilla, diseño responsive
 - **Real-time**: servidor Node.js con WebSockets para el trivial multijugador 1v1 (repo separado)
-- **Pagos**: Stripe — Checkout, suscripciones recurrentes, cupones, webhooks, reembolsos
+- **Pagos**: Stripe — Checkout, suscripciones recurrentes, cupones, webhooks, reembolsos (sistema de suscripciones actualmente desactivado, ver "Estado actual")
 - **Autenticación**: OAuth (Google) + sistema propio con verificación por email
 - **Infraestructura**: Hostinger (LAMP + Node en subdominio) · Cloudflare (CDN, DNS, WAF, rate limiting) · cron jobs
 - **Monitorización**: UptimeRobot con endpoint `/health` propio
@@ -46,7 +50,7 @@ Componente PHP + HTML + CSS + JS en un solo archivo. Backend con 4 gates de deci
 
 ## Qué no aparece aquí (pero existe en el core)
 
-- Sistema completo de trial premium de 7 días con cupón post-trial
+- Sistema completo de trial premium de 7 días con cupón post-trial (actualmente desactivado)
 - Registro y autenticación OAuth Google
 - Dashboard de administración con panel de afiliados
 - Motor de tests, banco de preguntas, sistema de retención

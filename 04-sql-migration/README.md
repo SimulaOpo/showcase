@@ -16,4 +16,4 @@ Ejemplo de migración de esquema en la iteración v3 del sistema de afiliados. A
 
 ## Contexto
 
-Migración aplicada en mayo de 2026 para soportar reembolsos que reviertan comisiones ya calculadas — feature que apareció cuando llegó el primer reembolso real y descubrimos que el sistema no lo contemplaba. Buen ejemplo de cómo los requisitos aparecen en producción, no en el diseño inicial.
+Migración aplicada en mayo de 2026 para soportar reembolsos que reviertan comisiones ya calculadas — feature que apareció cuando llegó el primer reembolso real y descubrí que el sistema no lo contemplaba. Buen ejemplo de cómo los requisitos aparecen en producción, no en el diseño inicial.
